@@ -9,7 +9,7 @@ type Props = BotProps & {
 declare global {
   namespace JSX {
     interface IntrinsicElements {
-      'flowise-fullchatbot': React.DetailedHTMLProps<
+      'growtheffect-fullchatbot': React.DetailedHTMLProps<
         React.HTMLAttributes<HTMLElement>,
         HTMLElement
       > & { class?: string }
@@ -33,5 +33,5 @@ export const FullPageChat = ({ style, className, ...assignableProps }: Props) =>
     Object.assign(ref.current, assignableProps)
   }, [assignableProps])
 
-  return <flowise-fullchatbot ref={ref} style={style} class={className} />
+  return <growtheffect-fullchatbot ref={ref} style={style} class={className} />
 }

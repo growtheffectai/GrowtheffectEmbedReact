@@ -13,7 +13,7 @@ const indexConfig = {
     format: "es",
     inlineDynamicImports: true,
   },
-  external: ["react", "react/jsx-runtime", "flowise-embed"],
+  external: ["react", "react/jsx-runtime", "growtheffect-embed"],
   plugins: [
     resolve({ extensions }),
     babel({

@@ -2628,29 +2628,6 @@ flatted@^3.2.7:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.9.tgz#7eb4c67ca1ba34232ca9d2d93e9886e611ad7daf"
   integrity sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==
 
-flowise-embed@latest:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/flowise-embed/-/flowise-embed-3.0.3.tgz#02931322a2721a57be7fc40c39b4ce848cc0b7c5"
-  integrity sha512-sLSZU72gzMV9Try82LR2RW7d5TTwcJxRysvJFN2N2E21B/SyyOEq8EXpALF59IwL7uL7+eXd3G7RjoxukqmCpQ==
-  dependencies:
-    "@babel/core" "^7.22.1"
-    "@microsoft/fetch-event-source" "^2.0.1"
-    "@ts-stack/markdown" "^1.4.0"
-    axios "^1.7.7"
-    cors "^2.8.5"
-    cross-env "^7.0.3"
-    device-detector-js "^3.0.3"
-    dotenv "^16.4.5"
-    express "^4.21.1"
-    form-data "^4.0.1"
-    lodash "^4.17.21"
-    multer "^1.4.5-lts.1"
-    node-fetch "^3.3.2"
-    prettier "^3.1.0"
-    solid-element "1.7.0"
-    solid-js "1.7.1"
-    zod "^3.22.4"
-
 follow-redirects@^1.15.6:
   version "1.15.9"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.9.tgz#a604fa10e443bf98ca94228d9eebcc2e8a2c8ee1"

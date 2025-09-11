@@ -10,7 +10,10 @@ importers:
     dependencies:
       '@ladle/react':
         specifier: 2.5.1
-        version: 2.5.1(@types/node@18.15.11)(react-dom@19.1.1(react@19.0.0))(react@19.0.0)(terser@5.44.0)(typescript@5.0.3)
+        version: 2.5.1(@types/node@18.15.11)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(terser@5.44.0)(typescript@5.0.3)
+      react-dom:
+        specifier: ^19.1.1
+        version: 19.1.1(react@19.1.1)
     devDependencies:
       '@babel/preset-react':
         specifier: 7.26.3
@@ -40,11 +43,11 @@ importers:
         specifier: 8.37.0
         version: 8.37.0
       growtheffect-embed:
-        specifier: github:growtheffectai/GrowthEffect-Chat-Component#main
-        version: https://codeload.github.com/growtheffectai/GrowthEffect-Chat-Component/tar.gz/01ed5ed3fe9d10ee9a25901660a39f909bb9dfa4
+        specifier: github:growtheffectai/GrowthEffect-Chat-Component#b6425d6
+        version: https://codeload.github.com/growtheffectai/GrowthEffect-Chat-Component/tar.gz/b6425d6
       react:
-        specifier: 19.0.0
-        version: 19.0.0
+        specifier: ^19.1.1
+        version: 19.1.1
       rollup:
         specifier: 3.20.2
         version: 3.20.2
@@ -775,8 +778,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@eslint-community/eslint-utils@4.8.0':
-    resolution: {integrity: sha512-MJQFqrZgcW0UNYLGOuQpey/oTN59vyWwplvCGZztn1cKz9agZPPYpJB7h2OMmuu7VLqkvEjN8feFZJmxNF9D+Q==}
+  '@eslint-community/eslint-utils@4.9.0':
+    resolution: {integrity: sha512-ayVFHdtZ+hsq1t2Dy24wCmGXGe4q9Gu3smhLYALJrr473ZH27MsnSL+LKUlimp4BWJqMDMLmPpx/Q9R3OAlL4g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
@@ -822,8 +825,8 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
 
-  '@jridgewell/trace-mapping@0.3.30':
-    resolution: {integrity: sha512-GQ7Nw5G2lTu/BtHTKfXhKHok2WGetd4XYcVKGx00SjAk8GMwgJM3zr6zORiPGuOE+/vkc90KtTosSSvaCjKb2Q==}
+  '@jridgewell/trace-mapping@0.3.31':
+    resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
   '@ladle/react-context@1.0.1':
     resolution: {integrity: sha512-xVQ8siyOEQG6e4Knibes1uA3PTyXnqiMmfSmd5pIbkzeDty8NCBtYHhTXSlfmcDNEsw/G8OzNWo4VbyQAVDl2A==}
@@ -958,16 +961,16 @@ packages:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
 
-  ansi-regex@6.2.0:
-    resolution: {integrity: sha512-TKY5pyBkHyADOPYlRT9Lx6F544mPl0vS5Ew7BJ45hA08Q+t3GjbueLliBWN3sMICk6+y7HdyxSzC4bWS8baBdg==}
+  ansi-regex@6.2.2:
+    resolution: {integrity: sha512-Bq3SmSpyFHaWjPk8If9yc6svM8c56dB5BAtW4Qbw5jHTwwXXcTLoRMkpDJp6VL0XzlWaCHTXrkFURMYmD0sLqg==}
     engines: {node: '>=12'}
 
   ansi-styles@4.3.0:
     resolution: {integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==}
     engines: {node: '>=8'}
 
-  ansi-styles@6.2.1:
-    resolution: {integrity: sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==}
+  ansi-styles@6.2.3:
+    resolution: {integrity: sha512-4Dj6M28JB+oAH8kFkTLUo+a2jwOFkuqb3yucU0CANcRRUbxS0cP0nZYCGjcc3BNXwRIsUVmDGgzawme7zvJHvg==}
     engines: {node: '>=12'}
 
   anymatch@3.1.3:
@@ -1085,8 +1088,8 @@ packages:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
 
-  chalk@5.6.0:
-    resolution: {integrity: sha512-46QrSQFyVSEyYAgQ22hQ+zDa60YHA4fBstHmtSApj1Y5vKtG27fWowW03jCk5KcbXEWPZUIR894aARCA/G1kfQ==}
+  chalk@5.6.2:
+    resolution: {integrity: sha512-7NzBL0rN6fMUW+f7A6Io4h40qQlG+xGmtMxfbnH/K7TAtt8JQWVQK+6g0UXKMeVJoyV5EkkNsErQ8pVD3bLHbA==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
   chokidar@3.6.0:
@@ -1118,8 +1121,8 @@ packages:
     resolution: {integrity: sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==}
     engines: {node: ^12.20.0 || >=14}
 
-  component-register@0.8.7:
-    resolution: {integrity: sha512-clPS/o1RNfJw7L1/w4q+nkj6l7JV32kFHCx6vW5nSPOEly4B9olMeADNilEgpLV/DdeS7y8JXhHKx9YvSj8vqQ==}
+  component-register@0.8.8:
+    resolution: {integrity: sha512-djhwcxjY+X9dacaYUEOkOm7tda8uOEDiMDigWysu3xv54M8o6XDlsjR1qt5Y8QLGiKg51fqXFIR2HUTmt9ys0Q==}
 
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
@@ -1254,8 +1257,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.5.214:
-    resolution: {integrity: sha512-TpvUNdha+X3ybfU78NoQatKvQEm1oq3lf2QbnmCEdw+Bd9RuIAY+hJTvq1avzHM0f7EJfnH3vbCnbzKzisc/9Q==}
+  electron-to-chromium@1.5.217:
+    resolution: {integrity: sha512-Pludfu5iBxp9XzNl0qq2G87hdD17ZV7h5T4n6rQXDi3nCyloBV3jreE9+8GC6g4X/5yxqVgXEURpcLtM0WS4jA==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -1492,8 +1495,8 @@ packages:
   grapheme-splitter@1.0.4:
     resolution: {integrity: sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==}
 
-  growtheffect-embed@https://codeload.github.com/growtheffectai/GrowthEffect-Chat-Component/tar.gz/01ed5ed3fe9d10ee9a25901660a39f909bb9dfa4:
-    resolution: {tarball: https://codeload.github.com/growtheffectai/GrowthEffect-Chat-Component/tar.gz/01ed5ed3fe9d10ee9a25901660a39f909bb9dfa4}
+  growtheffect-embed@https://codeload.github.com/growtheffectai/GrowthEffect-Chat-Component/tar.gz/b6425d6:
+    resolution: {tarball: https://codeload.github.com/growtheffectai/GrowthEffect-Chat-Component/tar.gz/b6425d6}
     version: 3.0.3
 
   has-flag@4.0.0:
@@ -1936,8 +1939,8 @@ packages:
     resolution: {integrity: sha512-jCvmsr+1IUSMUyzOkRcvnVbX3ZYC6g9TDrDbFuFmRDq7PD4yaGbLKNQL6k2jnArV8hjYxh7hVhAZB6s9HDGpZA==}
     engines: {node: '>=0.10.0'}
 
-  react@19.0.0:
-    resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
+  react@19.1.1:
+    resolution: {integrity: sha512-w8nqGImo45dmMIfljjMwOGtbmC/mk4CMYhWIicdSflH91J9TyCyczcPFXJzrZ/ZXcgGRFeP6BU0BEJTw6tZdfQ==}
     engines: {node: '>=0.10.0'}
 
   readable-stream@2.3.8:
@@ -1947,15 +1950,15 @@ packages:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
     engines: {node: '>=8.10.0'}
 
-  regenerate-unicode-properties@10.2.0:
-    resolution: {integrity: sha512-DqHn3DwbmmPVzeKj9woBadqmXxLvQoQIwu7nopMc72ztvxVmVk2SBhSnx67zuye5TP+lJsb/TBQsjLKhnDf3MA==}
+  regenerate-unicode-properties@10.2.2:
+    resolution: {integrity: sha512-m03P+zhBeQd1RGnYxrGyDAPpWX/epKirLrp8e3qevZdVkKtnCrjjWczIbYc8+xd6vcTStVlqfycTx1KR4LOr0g==}
     engines: {node: '>=4'}
 
   regenerate@1.4.2:
     resolution: {integrity: sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==}
 
-  regexpu-core@6.2.0:
-    resolution: {integrity: sha512-H66BPQMrv+V16t8xtmq+UC0CBpiTBA60V8ibS1QVReIp8T1z8hwFxqcGzm9K6lgsN7sB5edVH8a+ze6Fqm4weA==}
+  regexpu-core@6.3.1:
+    resolution: {integrity: sha512-DzcswPr252wEr7Qz8AyAVbfyBDKLoYp6eRA1We2Fa9qirRFSdtkP5sHr3yglDKy2BbA0fd2T+j/CUSKes3FeVQ==}
     engines: {node: '>=4'}
 
   regjsgen@0.8.0:
@@ -2122,8 +2125,8 @@ packages:
     resolution: {integrity: sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==}
     engines: {node: '>=8'}
 
-  strip-ansi@7.1.0:
-    resolution: {integrity: sha512-iq6eVVI64nQQTRYq2KtEg2d2uU7LElhTJwsH4YzIHZshxlgZms/wIc4VoDQTlG/IvVIrBKG06CrZnp0qv7hkcQ==}
+  strip-ansi@7.1.2:
+    resolution: {integrity: sha512-gmBGslpoQJtgnMAvOVqGZpEz9dyoKTCzy2nfz/n8aIFhN/jCE/rCmcxabB6jOOHV+0WNnylOxaxBQPSvcWklhA==}
     engines: {node: '>=12'}
 
   strip-eof@1.0.0:
@@ -2215,8 +2218,8 @@ packages:
     resolution: {integrity: sha512-5kaZCrbp5mmbz5ulBkDkbY0SsPOjKqVS35VpL9ulMPfSl0J0Xsm+9Evphv9CoIZFwre7aJoa94AY6seMKGVN5Q==}
     engines: {node: '>=4'}
 
-  unicode-match-property-value-ecmascript@2.2.0:
-    resolution: {integrity: sha512-4IehN3V/+kkr5YeSSDDQG8QLqO26XpL2XP3GQtqwlT/QYSECAwFztxVHjlbh0+gjJ3XmNLS0zDsbgs9jWKExLg==}
+  unicode-match-property-value-ecmascript@2.2.1:
+    resolution: {integrity: sha512-JQ84qTuMg4nVkx8ga4A16a1epI9H6uTXAknqxkGF/aFfRLw1xC/Bp24HNLaZhHSkWd3+84t8iXnp1J0kYcZHhg==}
     engines: {node: '>=4'}
 
   unicode-property-aliases-ecmascript@2.1.0:
@@ -2371,7 +2374,7 @@ snapshots:
       '@babel/parser': 7.28.4
       '@babel/types': 7.28.4
       '@jridgewell/gen-mapping': 0.3.13
-      '@jridgewell/trace-mapping': 0.3.30
+      '@jridgewell/trace-mapping': 0.3.31
       jsesc: 3.1.0
 
   '@babel/helper-annotate-as-pure@7.27.3':
@@ -2403,7 +2406,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.28.4
       '@babel/helper-annotate-as-pure': 7.27.3
-      regexpu-core: 6.2.0
+      regexpu-core: 6.3.1
       semver: 6.3.1
 
   '@babel/helper-define-polyfill-provider@0.6.5(@babel/core@7.28.4)':
@@ -3164,7 +3167,7 @@ snapshots:
   '@esbuild/win32-x64@0.18.20':
     optional: true
 
-  '@eslint-community/eslint-utils@4.8.0(eslint@8.37.0)':
+  '@eslint-community/eslint-utils@4.9.0(eslint@8.37.0)':
     dependencies:
       eslint: 8.37.0
       eslint-visitor-keys: 3.4.3
@@ -3202,33 +3205,33 @@ snapshots:
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
-      '@jridgewell/trace-mapping': 0.3.30
+      '@jridgewell/trace-mapping': 0.3.31
 
   '@jridgewell/remapping@2.3.5':
     dependencies:
       '@jridgewell/gen-mapping': 0.3.13
-      '@jridgewell/trace-mapping': 0.3.30
+      '@jridgewell/trace-mapping': 0.3.31
 
   '@jridgewell/resolve-uri@3.1.2': {}
 
   '@jridgewell/source-map@0.3.11':
     dependencies:
       '@jridgewell/gen-mapping': 0.3.13
-      '@jridgewell/trace-mapping': 0.3.30
+      '@jridgewell/trace-mapping': 0.3.31
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
-  '@jridgewell/trace-mapping@0.3.30':
+  '@jridgewell/trace-mapping@0.3.31':
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@ladle/react-context@1.0.1(react-dom@19.1.1(react@19.0.0))(react@19.0.0)':
+  '@ladle/react-context@1.0.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
     dependencies:
-      react: 19.0.0
-      react-dom: 19.1.1(react@19.0.0)
+      react: 19.1.1
+      react-dom: 19.1.1(react@19.1.1)
 
-  '@ladle/react@2.5.1(@types/node@18.15.11)(react-dom@19.1.1(react@19.0.0))(react@19.0.0)(terser@5.44.0)(typescript@5.0.3)':
+  '@ladle/react@2.5.1(@types/node@18.15.11)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(terser@5.44.0)(typescript@5.0.3)':
     dependencies:
       '@babel/code-frame': 7.27.1
       '@babel/core': 7.28.4
@@ -3242,7 +3245,7 @@ snapshots:
       '@babel/template': 7.27.2
       '@babel/traverse': 7.28.4
       '@babel/types': 7.28.4
-      '@ladle/react-context': 1.0.1(react-dom@19.1.1(react@19.0.0))(react@19.0.0)
+      '@ladle/react-context': 1.0.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@vitejs/plugin-react': 3.1.0(vite@4.5.14(@types/node@18.15.11)(terser@5.44.0))
       axe-core: 4.10.3
       boxen: 7.1.1
@@ -3258,13 +3261,13 @@ snapshots:
       history: 5.3.0
       lodash.merge: 4.6.2
       open: 8.4.2
-      prism-react-renderer: 1.3.5(react@19.0.0)
+      prism-react-renderer: 1.3.5(react@19.1.1)
       prop-types: 15.8.1
       query-string: 8.2.0
-      react: 19.0.0
-      react-dom: 19.1.1(react@19.0.0)
-      react-frame-component: 5.2.7(prop-types@15.8.1)(react-dom@19.1.1(react@19.0.0))(react@19.0.0)
-      react-inspector: 6.0.2(react@19.0.0)
+      react: 19.1.1
+      react-dom: 19.1.1(react@19.1.1)
+      react-frame-component: 5.2.7(prop-types@15.8.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      react-inspector: 6.0.2(react@19.1.1)
       vite: 4.5.14(@types/node@18.15.11)(terser@5.44.0)
       vite-tsconfig-paths: 4.3.2(typescript@5.0.3)(vite@4.5.14(@types/node@18.15.11)(terser@5.44.0))
     transitivePeerDependencies:
@@ -3393,13 +3396,13 @@ snapshots:
 
   ansi-regex@5.0.1: {}
 
-  ansi-regex@6.2.0: {}
+  ansi-regex@6.2.2: {}
 
   ansi-styles@4.3.0:
     dependencies:
       color-convert: 2.0.1
 
-  ansi-styles@6.2.1: {}
+  ansi-styles@6.2.3: {}
 
   anymatch@3.1.3:
     dependencies:
@@ -3475,7 +3478,7 @@ snapshots:
     dependencies:
       ansi-align: 3.0.1
       camelcase: 7.0.1
-      chalk: 5.6.0
+      chalk: 5.6.2
       cli-boxes: 3.0.0
       string-width: 5.1.2
       type-fest: 2.19.0
@@ -3498,7 +3501,7 @@ snapshots:
   browserslist@4.25.4:
     dependencies:
       caniuse-lite: 1.0.30001741
-      electron-to-chromium: 1.5.214
+      electron-to-chromium: 1.5.217
       node-releases: 2.0.20
       update-browserslist-db: 1.1.3(browserslist@4.25.4)
 
@@ -3537,7 +3540,7 @@ snapshots:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
 
-  chalk@5.6.0: {}
+  chalk@5.6.2: {}
 
   chokidar@3.6.0:
     dependencies:
@@ -3569,7 +3572,7 @@ snapshots:
 
   commander@9.5.0: {}
 
-  component-register@0.8.7: {}
+  component-register@0.8.8: {}
 
   concat-map@0.0.1: {}
 
@@ -3678,7 +3681,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.5.214: {}
+  electron-to-chromium@1.5.217: {}
 
   emoji-regex@8.0.0: {}
 
@@ -3743,7 +3746,7 @@ snapshots:
 
   eslint@8.37.0:
     dependencies:
-      '@eslint-community/eslint-utils': 4.8.0(eslint@8.37.0)
+      '@eslint-community/eslint-utils': 4.9.0(eslint@8.37.0)
       '@eslint-community/regexpp': 4.12.1
       '@eslint/eslintrc': 2.1.4
       '@eslint/js': 8.37.0
@@ -4010,7 +4013,7 @@ snapshots:
 
   grapheme-splitter@1.0.4: {}
 
-  growtheffect-embed@https://codeload.github.com/growtheffectai/GrowthEffect-Chat-Component/tar.gz/01ed5ed3fe9d10ee9a25901660a39f909bb9dfa4:
+  growtheffect-embed@https://codeload.github.com/growtheffectai/GrowthEffect-Chat-Component/tar.gz/b6425d6:
     dependencies:
       '@babel/core': 7.28.4
       '@microsoft/fetch-event-source': 2.0.1
@@ -4327,9 +4330,9 @@ snapshots:
 
   prettier@3.6.2: {}
 
-  prism-react-renderer@1.3.5(react@19.0.0):
+  prism-react-renderer@1.3.5(react@19.1.1):
     dependencies:
-      react: 19.0.0
+      react: 19.1.1
 
   process-nextick-args@2.0.1: {}
 
@@ -4375,26 +4378,26 @@ snapshots:
       iconv-lite: 0.4.24
       unpipe: 1.0.0
 
-  react-dom@19.1.1(react@19.0.0):
+  react-dom@19.1.1(react@19.1.1):
     dependencies:
-      react: 19.0.0
+      react: 19.1.1
       scheduler: 0.26.0
 
-  react-frame-component@5.2.7(prop-types@15.8.1)(react-dom@19.1.1(react@19.0.0))(react@19.0.0):
+  react-frame-component@5.2.7(prop-types@15.8.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
     dependencies:
       prop-types: 15.8.1
-      react: 19.0.0
-      react-dom: 19.1.1(react@19.0.0)
+      react: 19.1.1
+      react-dom: 19.1.1(react@19.1.1)
 
-  react-inspector@6.0.2(react@19.0.0):
+  react-inspector@6.0.2(react@19.1.1):
     dependencies:
-      react: 19.0.0
+      react: 19.1.1
 
   react-is@16.13.1: {}
 
   react-refresh@0.14.2: {}
 
-  react@19.0.0: {}
+  react@19.1.1: {}
 
   readable-stream@2.3.8:
     dependencies:
@@ -4410,20 +4413,20 @@ snapshots:
     dependencies:
       picomatch: 2.3.1
 
-  regenerate-unicode-properties@10.2.0:
+  regenerate-unicode-properties@10.2.2:
     dependencies:
       regenerate: 1.4.2
 
   regenerate@1.4.2: {}
 
-  regexpu-core@6.2.0:
+  regexpu-core@6.3.1:
     dependencies:
       regenerate: 1.4.2
-      regenerate-unicode-properties: 10.2.0
+      regenerate-unicode-properties: 10.2.2
       regjsgen: 0.8.0
       regjsparser: 0.12.0
       unicode-match-property-ecmascript: 2.0.0
-      unicode-match-property-value-ecmascript: 2.2.0
+      unicode-match-property-value-ecmascript: 2.2.1
 
   regjsgen@0.8.0: {}
 
@@ -4554,7 +4557,7 @@ snapshots:
 
   solid-element@1.7.0(solid-js@1.7.1):
     dependencies:
-      component-register: 0.8.7
+      component-register: 0.8.8
       solid-js: 1.7.1
 
   solid-js@1.7.1:
@@ -4587,7 +4590,7 @@ snapshots:
     dependencies:
       eastasianwidth: 0.2.0
       emoji-regex: 9.2.2
-      strip-ansi: 7.1.0
+      strip-ansi: 7.1.2
 
   string_decoder@1.1.1:
     dependencies:
@@ -4597,9 +4600,9 @@ snapshots:
     dependencies:
       ansi-regex: 5.0.1
 
-  strip-ansi@7.1.0:
+  strip-ansi@7.1.2:
     dependencies:
-      ansi-regex: 6.2.0
+      ansi-regex: 6.2.2
 
   strip-eof@1.0.0: {}
 
@@ -4668,7 +4671,7 @@ snapshots:
       unicode-canonical-property-names-ecmascript: 2.0.1
       unicode-property-aliases-ecmascript: 2.1.0
 
-  unicode-match-property-value-ecmascript@2.2.0: {}
+  unicode-match-property-value-ecmascript@2.2.1: {}
 
   unicode-property-aliases-ecmascript@2.1.0: {}
 
@@ -4731,9 +4734,9 @@ snapshots:
 
   wrap-ansi@8.1.0:
     dependencies:
-      ansi-styles: 6.2.1
+      ansi-styles: 6.2.3
       string-width: 5.1.2
-      strip-ansi: 7.1.0
+      strip-ansi: 7.1.2
 
   wrappy@1.0.2: {}
 

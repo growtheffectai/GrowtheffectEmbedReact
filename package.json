@@ -13,7 +13,8 @@
   "keywords": [],
   "license": "MIT",
   "dependencies": {
-    "@ladle/react": "2.5.1"
+    "@ladle/react": "2.5.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@babel/preset-react": "7.26.3",
@@ -25,8 +26,8 @@
     "@types/node": "18.15.11",
     "@types/react": "18.0.32",
     "eslint": "8.37.0",
-    "growtheffect-embed": "github:growtheffectai/GrowthEffect-Chat-Component#main",
-    "react": "19.0.0",
+    "growtheffect-embed": "github:growtheffectai/GrowthEffect-Chat-Component#b6425d6",
+    "react": "^19.1.1",
     "rollup": "3.20.2",
     "rollup-plugin-typescript-paths": "1.4.0",
     "tslib": "2.5.0",
@@ -35,6 +36,6 @@
   },
   "peerDependencies": {
     "growtheffect-embed": "*",
-    "react": "18.x"
+    "react": "^19.1.1"
   }
 }

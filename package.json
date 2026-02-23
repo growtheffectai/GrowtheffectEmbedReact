@@ -1,22 +1,47 @@
 {
-  "name": "growtheffect-embed-react",
+  "name": "@growtheffectai/growtheffect-embed-react",
   "version": "3.0.3",
   "description": "React library to display growtheffect chatbot on your website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/growtheffectai/GrowtheffectEmbedReact.git"
+  },
+  "homepage": "https://github.com/growtheffectai/GrowtheffectEmbedReact#readme",
+  "bugs": {
+    "url": "https://github.com/growtheffectai/GrowtheffectEmbedReact/issues"
+  },
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "type": "module",
   "scripts": {
     "dev": "rollup --watch --config rollup.config.js",
     "build": "rollup --config rollup.config.js",
+    "prepack": "pnpm build",
     "lint": "eslint --fix \"src/**/*.ts*\""
   },
-  "keywords": [],
+  "keywords": [
+    "growtheffect",
+    "chatbot",
+    "react",
+    "web-component"
+  ],
   "license": "MIT",
-  "dependencies": {
-    "@ladle/react": "2.5.1",
-    "react-dom": "^19.1.1"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@ladle/react": "2.5.1",
     "@babel/preset-react": "7.26.3",
     "@babel/preset-typescript": "7.21.4",
     "@rollup/plugin-babel": "6.0.3",
@@ -28,6 +53,7 @@
     "eslint": "8.37.0",
     "growtheffect-embed": "github:growtheffectai/GrowthEffect-Chat-Component#b6425d6",
     "react": "^19.1.1",
+    "react-dom": "^19.1.1",
     "rollup": "3.20.2",
     "rollup-plugin-typescript-paths": "1.4.0",
     "tslib": "2.5.0",
@@ -36,6 +62,7 @@
   },
   "peerDependencies": {
     "growtheffect-embed": "*",
-    "react": "^19.1.1"
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   }
 }

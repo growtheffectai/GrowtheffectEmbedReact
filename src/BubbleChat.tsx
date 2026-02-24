@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import type { BubbleProps } from 'growtheffect-embed'
+import type { BubbleProps } from '@growtheffectai/chat-component/dist/features/bubble/components/Bubble'
 
 type Props = BubbleProps
 
@@ -22,7 +22,7 @@ export const BubbleChat = (props: Props) => {
 
   useEffect(() => {
     ;(async () => {
-      await import('growtheffect-embed/dist/web.js')
+      await import('@growtheffectai/chat-component')
       setIsInitialized(true)
     })()
     return () => {

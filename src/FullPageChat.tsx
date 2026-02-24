@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import type { BotProps } from 'growtheffect-embed'
+import type { BotProps } from '@growtheffectai/chat-component/dist/components/Bot'
 
 type Props = BotProps & {
   style?: React.CSSProperties
@@ -24,7 +24,7 @@ export const FullPageChat = ({ style, className, ...assignableProps }: Props) =>
 
   useEffect(() => {
     ;(async () => {
-      await import('growtheffect-embed/dist/web.js')
+      await import('@growtheffectai/chat-component')
     })()
   }, [])
 

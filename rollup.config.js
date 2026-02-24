@@ -13,7 +13,7 @@ const indexConfig = {
     format: "es",
     inlineDynamicImports: true,
   },
-  external: ["react", "react/jsx-runtime", "growtheffect-embed"],
+  external: ["react", "react/jsx-runtime", "@growtheffectai/chat-component"],
   plugins: [
     resolve({ extensions }),
     babel({

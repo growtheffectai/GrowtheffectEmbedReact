@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import type { BubbleProps } from 'growtheffect-embed';
+import type { BubbleProps } from '@growtheffectai/chat-component/dist/features/bubble/components/Bubble';
 type Props = BubbleProps;
 declare global {
     namespace JSX {

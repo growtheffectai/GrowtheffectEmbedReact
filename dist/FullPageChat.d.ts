@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import type { BotProps } from 'growtheffect-embed';
+import type { BotProps } from '@growtheffectai/chat-component/dist/components/Bot';
 type Props = BotProps & {
     style?: React.CSSProperties;
     className?: string;

@@ -51,7 +51,7 @@
     "@types/node": "18.15.11",
     "@types/react": "18.0.32",
     "eslint": "8.37.0",
-    "growtheffect-embed": "github:growtheffectai/GrowthEffect-Chat-Component#b6425d6",
+    "@growtheffectai/chat-component": "^3.0.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "rollup": "3.20.2",
@@ -61,7 +61,7 @@
     "typescript": "5.0.3"
   },
   "peerDependencies": {
-    "growtheffect-embed": "*",
+    "@growtheffectai/chat-component": "*",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   }
